@@ -1,0 +1,81 @@
+﻿@model Nurgül_Eylül_Aydoğan_201103046.DAL.Projedetay
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_LayoutPageAdmin.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Projedetay</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.resimyolu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.resimyolu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.kisabilgi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kisabilgi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.moduller)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.moduller)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.genelozellikler)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.genelozellikler)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.teknikozellikler)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.teknikozellikler)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.baslik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.baslik)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sira)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sira)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

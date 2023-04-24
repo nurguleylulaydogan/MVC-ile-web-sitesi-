@@ -1,0 +1,70 @@
+﻿@model IEnumerable<Nurgül_Eylül_Aydoğan_201103046.DAL.sitebilgi>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPageAdmin.cshtml";
+}
+
+<h2>Site Bilgi Yönetimi</h2>
+
+<p>
+    @Html.ActionLink("Yeni Ekle", "Create", null, new { @class = "btn btn-primary" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.firmaadi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.logoyolu)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.kucuklogoyolu)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.telefon)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.adres)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.harita)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.firmaadi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.logoyolu)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.kucuklogoyolu)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.telefon)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.adres)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.harita)
+        </td>
+        <td>
+            @Html.ActionLink("Düzenle", "Edit", new { id=item.id }, new { @class = "btn btn-success" }) |
+           
+            @Html.ActionLink("Sil", "Delete", new { id=item.id }, new { @class = "btn btn-warning" })
+        </td>
+    </tr>
+}
+
+</table>

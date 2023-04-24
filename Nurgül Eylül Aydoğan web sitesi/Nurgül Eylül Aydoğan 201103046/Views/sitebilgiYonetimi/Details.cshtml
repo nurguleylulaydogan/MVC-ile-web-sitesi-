@@ -1,0 +1,75 @@
+﻿@model Nurgül_Eylül_Aydoğan_201103046.DAL.sitebilgi
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutPageAdmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>sitebilgi</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.firmaadi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.firmaadi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.logoyolu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.logoyolu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.kucuklogoyolu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kucuklogoyolu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.telefon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.telefon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.adres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.adres)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.harita)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.harita)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

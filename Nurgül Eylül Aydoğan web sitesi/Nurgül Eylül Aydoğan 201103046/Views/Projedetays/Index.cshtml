@@ -1,0 +1,70 @@
+﻿@model IEnumerable<Nurgül_Eylül_Aydoğan_201103046.DAL.Projedetay>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPageAdmin.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.resimyolu)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.kisabilgi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.moduller)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.genelozellikler)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.teknikozellikler)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.baslik)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sira)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.resimyolu)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.kisabilgi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.moduller)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.genelozellikler)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.teknikozellikler)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.baslik)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sira)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

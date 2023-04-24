@@ -1,0 +1,286 @@
+﻿@model Nurgül_Eylül_Aydoğan_201103046.DAL.Projedetay
+@{
+    ViewBag.Title = "Detay";
+}
+
+<section class="page-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>
+                    <span id="icerik_lblProjeBaslik">@Model.baslik</span>
+                </h1>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="owl-carousel owl-theme owl-loaded owl-carousel-init" data-plugin-options="{&quot;items&quot;: 1}">
+
+
+
+                <div class="owl-stage-outer" style="padding-left: 0px; padding-right: 0px;">
+                    <div class="owl-stage" style="width: 2049px; transform: translate3d(-683px, 0px, 0px); transition: all 0s ease 0s;">
+                        <div class="owl-item active cloned" style="width: 683px; margin-right: 0px;">
+                            <a class="img-thumbnail lightbox pull-left" href="/siteTema/resimler/projelerimiz/Buyuk/f1ffa99a-c20d-40f0-bc12-2623d18a54f7.jpg" data-plugin-options="{&quot;type&quot;:&quot;image&quot;}">
+                                <img class="img-responsive" width="215" src="/siteTema/resimler/projelerimiz/Buyuk/f1ffa99a-c20d-40f0-bc12-2623d18a54f7.jpg">
+                                <span class="zoom">
+                                    <i class="fa fa-search"></i>
+                                </span>
+                            </a>
+                        </div><div class="owl-item active" style="width: 683px; margin-right: 0px;">
+                            <a class="img-thumbnail lightbox pull-left" href="/siteTema/resimler/projelerimiz/Buyuk/f1ffa99a-c20d-40f0-bc12-2623d18a54f7.jpg" data-plugin-options="{&quot;type&quot;:&quot;image&quot;}">
+                                <img class="img-responsive" width="215" src="/siteTema/resimler/projelerimiz/Buyuk/f1ffa99a-c20d-40f0-bc12-2623d18a54f7.jpg">
+                                <span class="zoom">
+                                    <i class="fa fa-search"></i>
+                                </span>
+                            </a>
+                        </div><div class="owl-item active cloned" style="width: 683px; margin-right: 0px;">
+                            <a class="img-thumbnail lightbox pull-left" href="/siteTema/resimler/projelerimiz/Buyuk/f1ffa99a-c20d-40f0-bc12-2623d18a54f7.jpg" data-plugin-options="{&quot;type&quot;:&quot;image&quot;}">
+                                <img class="img-responsive" width="215" src="/siteTema/resimler/projelerimiz/Buyuk/f1ffa99a-c20d-40f0-bc12-2623d18a54f7.jpg">
+                                <span class="zoom">
+                                    <i class="fa fa-search"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div></div></div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <p class="taller">
+                <span id="icerik_lblProjeAciklama"></span>
+            </p><p>
+                @Model.kisabilgi
+            </p>
+
+            <p></p>
+            <a href="@Url.Action("Iletisim","Home")" class="btn btn-primary btn-icon"><i class="fa fa-external-link"></i>Demo Talebi</a>
+            <ul class="portfolio-details">
+                <li>
+                    <p><strong>Modüller:</strong></p>
+                    <ul class="list list-skills icons list-unstyled list-inline">
+
+
+                        <li><i class="fa fa-check-circle"></i>Kullanıcı Giriş</li>
+
+                        @*<li><i class="fa fa-check-circle"></i>Kullanıcı Yönetim</li>
+
+                        <li><i class="fa fa-check-circle"></i>İlk Başvuru</li>
+
+                        <li><i class="fa fa-check-circle"></i>Ön Değerlendirme / Raportör Atama</li>
+
+                        <li><i class="fa fa-check-circle"></i>Raportör Değerlendirme</li>
+
+                        <li><i class="fa fa-check-circle"></i>Hakem Değerlendirme</li>
+
+                        <li><i class="fa fa-check-circle"></i>Proje Yönetim</li>
+
+                        <li><i class="fa fa-check-circle"></i>Proje Bütçesi</li>
+
+                        <li><i class="fa fa-check-circle"></i>Firma İhale</li>
+
+                        <li><i class="fa fa-check-circle"></i>Demirbaş ve Sarf Malzemeleri Takibi</li>
+
+                        <li><i class="fa fa-check-circle"></i>Gelişme ve Sonuç Raporu</li>
+
+                        <li><i class="fa fa-check-circle"></i>BAP Rapor Yönetim</li>
+
+                        <li><i class="fa fa-check-circle"></i>BAP Gündemi</li>
+
+                        <li><i class="fa fa-check-circle"></i>Toplantı Oluşturma / Karar Yönetimi</li>
+
+                        <li><i class="fa fa-check-circle"></i>Mesajlaşma / Bildirim / Mail</li>
+
+                        <li><i class="fa fa-check-circle"></i>YÖKSİS Entegrasyonu</li>
+
+                        <li><i class="fa fa-check-circle"></i>Yardım</li>*@
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="tabs">
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="active">
+                        <a href="#popular10" data-toggle="tab" class="text-center">Genel Özellikler</a>
+                    </li>
+                    <li>
+                        <a href="#recent10" data-toggle="tab" class="text-center">Teknik Özellikler</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="popular10" class="tab-pane active">
+
+                        <p>
+                        </p><p>
+                           
+                        </p>
+
+                        <p></p>
+
+                        <p>
+                        </p><p>
+                            Modüler Yapı
+                        </p>
+
+                        <p></p>
+
+                        <p>
+                        </p><p>
+                            Veri Güvenliği
+                        </p>
+
+                        <p></p>
+
+                        <p>
+                        </p><p>
+                            İşletim Sisteminden Bağımsız
+                        </p>
+
+                        <p></p>
+
+                        <p>
+                        </p><p>
+                            Tüm Web Browserlara Uygun
+                        </p>
+
+                        <p></p>
+
+                        <p>
+                        </p><p>
+                            Kullanıcı Bazlı Yetkilendirme ve Rol Tanımlama
+                        </p>
+
+                        <p></p>
+
+                    </div>
+                    <div id="recent10" class="tab-pane">
+
+                        <p>
+                        </p><p>
+                            Dahili Kullanıcı Veritabanı veya LDAP Entegrasyonu
+                        </p>
+
+                        <p></p>
+
+                        <p>
+                        </p><p>
+                            C# Programlama Dili
+                        </p>
+
+                        <p></p>
+
+                        <p>
+                        </p><p>
+                            Veritabanı Esnekliği
+                        </p>
+
+                        <p></p>
+
+                        <p>
+                        </p><p>
+                            .NET 4.5 Framework Tabanlı&nbsp;
+                        </p>
+
+                        <p></p>
+
+                        <p>
+                        </p><div>
+                            Modüler Veritabanı Kullanımı (MSSQL, Oracle, MySQL, IBM DB2, ….)
+                        </div>
+
+                        <p></p>
+
+                        <p>
+                        </p><div>
+                            ASP.NET Teknolojisi
+                        </div>
+
+                        <p></p>
+
+                        <p>
+                        </p><div>
+                            LDAP ve Active Directory Entegrasyonu ile Single Sign-on
+                        </div>
+
+                        <p></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="short word-rotator-title center"><strong>Referanslarımız</strong></h2>
+    <div class="row center">
+        <div class="owl-carousel owl-theme owl-loaded owl-carousel-init" data-plugin-options="{&quot;items&quot;: 6, &quot;autoplay&quot;: true, &quot;autoplayTimeout&quot;: 3000}">
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="owl-stage-outer" style="padding-left: 0px; padding-right: 0px; height: 133px;">
+                <div class="owl-stage" style="width: 5704px; transform: translate3d(-713px, 0px, 0px); transition: all 0.25s ease 0s;">
+                    <div class="owl-item cloned" style="width: 713px; margin-right: 0px;">
+                        <div>
+                            <img class="img-responsive" src="siteTema/resimler/projelerimiz/Referanslar/Kucuk/01f78cd9-f85f-41ff-8b82-b2ecdb174080.png">
+
+                        </div>
+                    </div><div class="owl-item active" style="width: 713px; margin-right: 0px;">
+                        <div>
+                            <img class="img-responsive" src="siteTema/resimler/projelerimiz/Referanslar/Kucuk/90ffa457-38a4-4c49-9660-029866f80738.png">
+
+                        </div>
+                    </div><div class="owl-item" style="width: 713px; margin-right: 0px;">
+                        <div>
+                            <img class="img-responsive" src="siteTema/resimler/projelerimiz/Referanslar/Kucuk/b55a5b2d-c048-4c5b-83be-702ea532cefa.png">
+
+                        </div>
+                    </div><div class="owl-item" style="width: 713px; margin-right: 0px;">
+                        <div>
+                            <img class="img-responsive" src="siteTema/resimler/projelerimiz/Referanslar/Kucuk/77907518-cda8-4fc2-8872-de6e3d5ed76c.png">
+
+                        </div>
+                    </div><div class="owl-item" style="width: 713px; margin-right: 0px;">
+                        <div>
+                            <img class="img-responsive" src="siteTema/resimler/projelerimiz/Referanslar/Kucuk/ecf8c5c5-15cc-48d4-bc0e-2bf428df25c5.png">
+
+                        </div>
+                    </div><div class="owl-item" style="width: 713px; margin-right: 0px;">
+                        <div>
+                            <img class="img-responsive" src="siteTema/resimler/projelerimiz/Referanslar/Kucuk/413ad30a-ba49-4864-b179-ec36520bf95d.png">
+
+                        </div>
+                    </div><div class="owl-item" style="width: 713px; margin-right: 0px;">
+                        <div>
+                            <img class="img-responsive" src="siteTema/resimler/projelerimiz/Referanslar/Kucuk/01f78cd9-f85f-41ff-8b82-b2ecdb174080.png">
+
+                        </div>
+                    </div><div class="owl-item cloned" style="width: 713px; margin-right: 0px;">
+                        <div>
+                            <img class="img-responsive" src="siteTema/resimler/projelerimiz/Referanslar/Kucuk/90ffa457-38a4-4c49-9660-029866f80738.png">
+
+                        </div>
+                    </div>
+                </div>
+            </div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div>
+        </div>
+    </div>
+</div>
+

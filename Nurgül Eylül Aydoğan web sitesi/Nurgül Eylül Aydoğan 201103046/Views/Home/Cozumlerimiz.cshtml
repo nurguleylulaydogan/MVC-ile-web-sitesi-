@@ -1,0 +1,43 @@
+﻿@model List<Nurgül_Eylül_Aydoğan_201103046.DAL.Cozumler>
+@{
+    ViewBag.Title = "Cozumlerimiz";
+}
+
+<section class="page-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Çözümlerimiz</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+    <div class="row">
+        <ul class="portfolio-list sort-destination" data-sort-id="portfolio">
+            @foreach (var item in Model)
+            {
+                <li class="col-md-4 col-sm-6 col-xs-12 isotope-item logos">
+                    <div class="portfolio-item img-thumbnail">
+                        <a href=@Url.Action("Detay","Home",new { id=item.id }) class="thumb-info">
+                            <img alt="" class="img-responsive" src="@item.resimyolu">
+                            <span class="thumb-info-title">
+                                <span class="thumb-info-inner">@item.baslik</span>
+                            </span>
+                            <span class="thumb-info-action">
+
+                            </span>
+                        </a>
+                    </div>
+                    <p></p><p>
+                        @item.bilgi
+                    </p>
+                </li>
+
+
+            }
+
+
+        </ul>
+    </div>
+</div>

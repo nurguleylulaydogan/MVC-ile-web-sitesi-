@@ -1,0 +1,57 @@
+﻿@model Nurgül_Eylül_Aydoğan_201103046.DAL.Cozumler
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_LayoutPageAdmin.cshtml";
+}
+
+<h2>Sil</h2>
+
+<h3>Bu kaydı silmek istediğinize emin misiniz?</h3>
+<div>
+    <h4>Çözümler</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.resimyolu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.resimyolu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.bilgi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.bilgi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sira)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sira)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.baslik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.baslik)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
